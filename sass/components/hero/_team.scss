@@ -1,0 +1,70 @@
+.team.section {
+  background: $secondary-white;
+}
+.team.container {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team.list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.team-list-item {
+    margin-bottom: 30px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: calc((100% - 30px) / 2);
+    &:nth-child(-n+2) {
+      margin-bottom: 30px;}
+    &:nth-child(odd) {
+        margin-right: 30px;}
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  background: $white-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
+}
+.team-image {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-left: 0;
+}
+.team-subtitle {
+  margin-bottom: 10px;
+  margin-top: 0px;
+
+  color: $main-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team-role {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: $secondary-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}

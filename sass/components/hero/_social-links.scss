@@ -1,0 +1,25 @@
+.social-links-list {
+    display: flex;
+    justify-content: center;
+  }
+  .social-links-item {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    fill: $icon-color;
+  
+    transition: background-color $cubic,
+      border-radius $cubic,
+      --color4 $cubic;
+      
+      &:hover,
+      &:focus {
+    fill: $white-color;
+    background-color: $accent;
+    border-radius: 50%;
+     }
+  }

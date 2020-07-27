@@ -1,0 +1,41 @@
+.footer-address {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+    margin-bottom: 0;
+  }
+  color: $white-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    color: $white-color;
+  }
+}
+.address-text {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.address-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color $cubic;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}

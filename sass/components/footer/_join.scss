@@ -1,0 +1,25 @@
+.join {
+    margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+    margin-bottom: 0;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer.social-links-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: $white-color;
+  transition: background-color $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
+}

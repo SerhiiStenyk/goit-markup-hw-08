@@ -1,0 +1,29 @@
+.page-footer {
+  background: #2f303a;
+}
+.page-footer .container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: start;
+  }
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.footer-title {
+  margin-bottom: 20px;
+  margin-top: 0px;
+
+  color: $white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

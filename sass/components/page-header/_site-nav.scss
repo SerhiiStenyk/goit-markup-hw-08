@@ -1,0 +1,61 @@
+.site-nav .link {
+  position: relative;
+  display: block;
+  color: $main-text;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  transition: color $cubic;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.site-nav .link.current {
+  color: $accent;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: $accent;
+    border-radius: 2px;
+  }
+}
+.site-nav {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 85px;
+    .site-nav-item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+    @media screen and (min-width: 1200px) {
+      margin-right: 305px;}
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav-item:not(:last-child) {
+    margin-bottom: 40px;}
+  .site-nav-item:last-child {
+    margin-bottom: 60px;}
+}
