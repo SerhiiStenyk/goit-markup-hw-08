@@ -1,1 +1,3 @@
-# goit-markup-hw-08
+Web Studio.
+Personal project.
+Technologies: HTML/CSS, SASS.
